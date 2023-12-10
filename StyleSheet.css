@@ -1,0 +1,700 @@
+*
+{
+    margin: 0;
+    padding:0;
+    background-color: #000;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+body{
+    background-color: #000;
+    
+}
+/* Hide the vertical scrollbar */
+body::-webkit-scrollbar {
+    width: .0em;
+}
+
+
+/* overall html controled */
+html{
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+    
+}
+
+/* designing of the section  */
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+/* navigation bar design   */
+section nav
+{
+    height: 15%;
+    background-color: rgba(0,0,0,0.9);
+}
+/* hover effect from left to right below navgation items */
+section nav
+{
+    height: 15%;
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+/* register and login btn design  */
+section nav .details
+{
+    display:inline-flex;
+    justify-content: space-between;
+    margin-right: 22px;
+}
+
+/* design of login btn  */
+section nav .details  #one
+{
+    font-size:20px;
+    text-decoration: none;
+    padding:10px 10%;
+    margin-right:20px;
+    border-radius: 12px;
+    transition: .5s;
+}
+
+/* Register btn in naviagation with dynamic hovering effect  */
+
+section nav .details  .two:hover{
+    background-color: black;
+    color:gold;
+}
+
+/* register btn in navigation with static and no mouse hover effects */
+
+section nav .details .two{
+    padding:12px 12%;
+    text-decoration: none;
+    margin-right:20px;
+    border-radius: 12px;
+    border: 1px solid gold;
+    background-color: #FFD700;
+    transition: .5s;
+}
+/* login navgiation when it's hovers */
+section nav .details #one:hover{
+    background-color:rgba(255, 223, 0, 0.8);
+}
+/* design of logo for restaruant */
+section nav .logo{
+    display: flex;
+    align-items:center;
+    border: 1px solid  #FFD700;
+    padding: 6px 30px;
+    border-radius: 70%;
+    background-color: #FFD700;
+}
+
+/* dagron designing in logo  */
+section nav .logo i{
+ color: gold;
+ font-size: 59px;
+ 
+ 
+}
+/* name of the logo design hemanth lezzet =hotel */
+section nav .logo h1{
+    font-size: 22px;
+    color :black;
+    text-align: center;
+}
+/* unordered list design and internally it constist of hyperlinks */
+section nav ul
+{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin:0 15px;
+}
+section nav ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-weight:500;
+    font-size:18px;
+}
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: goldenrod;
+    display: block;
+    transition:0.2s;
+
+}
+section nav ul li a:hover::after
+{
+    width: 100%;
+    
+}
+section nav ul li a:hover{
+    color: gold;
+}
+
+/* searching icons design  */
+.icons i
+{
+    color:white;
+    font-size: 20px;
+    margin: 0 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.icons i:hover{
+    color:gold;
+    font-size: 24px;
+}
+
+/* main part design  start from here font opening */
+section .main
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top:130px;
+}
+/* heading desgin in main  */
+section .main .menu-text h1{
+    font-size: 60px;
+    position: relative;
+    top:-40px;
+    letter-spacing: 12px;
+    left:-40px;
+}
+/* highlighting the internal sensentences  */
+section .main .menu-text h1 span{
+    margin-left: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color :#fac031;
+    line-height: 24px;
+    font-size: 60px;
+}
+/* alignment of image in main section  */
+section .main .image img
+{
+    position: relative;
+    left: 20px;
+}
+/* alignment of image in main section and detailing of review potal  */
+
+section .main .image div 
+{
+    position: relative;
+    top:-80px;
+    right:120px;
+    width:250px;
+    letter-spacing: 1px;
+    height:40px;
+    background-color:transparent;text-align: center;
+}
+/* in image section div part starts design and color for the stars and font increase  */
+section .main .image div #dull
+{
+    font-size: 24px;    
+    color:gold;
+    margin-top: 12px;
+}
+
+/* paragram desgin starts below the main heading  */
+section p
+{
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    bottom: 120px;
+    top:-40px;
+    margin-left: 60px ;
+    line-height:24px;
+    color:white;
+    font-size: 20px;
+    margin-top: -40px;
+    letter-spacing: 2px;
+}
+
+/* internal way paragraph design and highlighting the required things */
+section p span{
+    font-size: 36px;
+    color: #fac031;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+/* internal login and register form designing is pending */
+
+/* 👆👆designing of main part of the opening page is completed */
+
+/* about section  start from here  */
+
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230527/pngtree-variety-of-indian-food-is-served-on-a-table-image_2683811.jpg");
+    background-size:cover; 
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #fff; /* Set text color to white for better readability on the image */
+}
+
+ /* in about section in div taken styling is completed */
+.about_txt {
+    max-width: 900px;
+    background-color: rgba(0,0,0,0.7);
+    padding: 6% 6%;
+    box-shadow: 0px 0px 10px #ccc;
+}
+/* about us heading design  */
+h1 {
+    background-color: transparent;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 12px 2px;
+    /* padding: 12px 20px ; */
+}
+/* us designing  */
+h1 span {
+    background-color: transparent;
+    color: gold;
+    padding-left: 12px;
+}
+/* internal paragaph designing  */
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin:20px ;
+    background-color: transparent;
+    text-align: left;   
+}
+
+
+
+/* menu bar designing start from here  */
+
+.menu
+{
+    width: 100%;
+    padding:70px 20px;
+}
+
+.menu h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.menu .menu-box
+{
+    width:95%;
+    margin:50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 5px  
+}
+
+.menu .menu-box .menu_card
+{
+    width: 400px;
+    height: 480px;
+    padding-top:10px;
+    margin-bottom: 30px;
+    border: .5px solid whitesmoke;
+    /* box-shadow: 0 0 15px gold; */
+    
+}
+.menu .menu-box .menu_card:hover{
+    box-shadow: 2px 1px 100px goldenrod;
+    cursor: pointer;
+}
+.menu .menu-box .menu_card .menu_image
+{
+    width: 360px;
+    height: 235px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.menu .menu-box .menu_card .menu_image img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 2s;
+}
+.menu .menu-box .menu_card .menu_image img:hover{
+    scale: 1.2;
+}
+
+.menu .menu-box .menu_card .menu_info .align
+{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+
+.menu .menu-box .menu_card .small_card 
+{
+    width: 40px;
+    height: 40px;
+    float:right;
+    position: relative;
+    top: -228px;
+    text-align: center;
+    right: 0px;
+    opacity:0;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,.1);
+    transition: .3s;
+}
+
+
+.menu .menu-box .menu_card:hover .small_card 
+{
+    position: relative;
+    top:-228px;
+    right:38px;
+    opacity: 1;
+}
+.menu .menu-box .menu_card .small_card i{
+    margin-top: 12px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .2s;
+}
+.menu .menu-box .menu_card .small_card i:hover{  color: gold;}
+
+.menu .menu-box .menu_card .menu_info h2{
+    margin-top: 20px;
+    text-align: center;
+    color: gold;
+    padding-left: 22px;
+}
+
+.menu .menu-box .menu_card .menu_info p{
+    text-align: center;
+    font-size: 16px;
+}
+.menu .menu-box .menu_card .menu_info .align h3
+{
+    color: white;
+    font-size: 24px;
+}
+
+.menu .menu-box .menu_card:hover .align h3
+{
+    color: gold;
+    font-size: 24px;
+}
+
+.menu .menu-box .menu_card .menu_info .align .menu_icon i
+{
+    font-size: 20px;
+    color: #FFD700;
+    /* transition: 2s; */
+}
+.menu .menu-box .menu_card:hover .menu_info .align .menu_icon i
+{
+color:white;
+transition: .5s;
+}
+
+
+/* blog section  */
+.blog
+{
+    margin-top: -100px;
+    margin-bottom: 250px;
+}
+.blog .blog_card 
+{
+    background-image: url("https://i2-prod.coventrytelegraph.net/incoming/article9789294.ece/ALTERNATES/s615/PM2045816.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position-y: -300px; 
+    transition: 3s;
+}
+.blog .blog_card .head
+{
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    transition: 0.1s;
+}
+.blog .blog_card .head h1
+{
+    position: relative;
+    top:220px;
+    font-size: 68px;
+    color: gold;
+    transition: 4s;
+}
+.blog .blog_card:hover{
+    scale:1.03;
+    cursor: pointer;
+}
+.blog .blog_card:hover .head h1{
+    scale: 1.1;
+    cursor: pointer;
+} 
+/* blogging design is completed  */
+
+/* review items avaliable */
+.blog .item-card
+{
+    margin-top:-80px;
+    width: 80%;
+    height: 450px;
+    border: 1px solid gold;
+    position: relative;
+    left: 140px;
+    top: 100px;
+    background-image: url("https://www.eatingwell.com/thmb/mCuW21FW1YGpVJYpC03ol0nVhws=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Eat-the-Rainbow-Chopped-Salad-with-Basil-Mozzarella-458e6e6c3ef447bf8261ee4070449754.jpg") ;
+    background-position: center;
+    background-size: auto;
+    overflow: hidden;
+}
+.blog .item-card .para
+{
+    width:100%;height: 100%;
+    position: relative;
+    bottom:100px;
+    background-color: rgba(0,0,0,0.7);
+    transition: 1s;
+    opacity: 0;
+}
+.blog .item-card .para h4
+{
+    background-color: transparent;
+    font-size: 18px;
+    padding-left: 36px;
+    margin-bottom: 50px;
+}
+.blog .item-card .para p{
+    text-align: center;
+    width: 80%;
+    position: relative;
+    left: 150px;
+}
+.blog .item-card:hover .para{
+    bottom:11px;
+    opacity: 1;
+}
+.blog .item-card:hover .para h1
+{
+    padding-top: 80px;
+    color: gold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.blog .item-card:hover .para h4{
+    text-decoration: underline;
+    text-decoration-thickness:3px;
+    text-decoration-color:goldenrod;
+}
+  /* item card 1 desgin  */  
+.blog .item-card1
+{
+    margin-top:40px;
+    width: 80%;
+    height: 450px;
+    border: 1px solid gold;
+    position: relative;
+    left: 120px;
+    top: 100px;
+    background-image: url("https://hodgepodgedays.co.uk/wp-content/uploads/2020/12/pexels-photo-374052.jpeg") ;
+    background-position: center;
+    margin: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.blog .item-card1 .para1
+{
+    width:100%;height: 100%;
+    position: relative;
+    top:100px;
+    padding-top: 15px;
+    background-color: rgba(0,0,0,0.7);
+    transition: 1s;
+    overflow: hidden;
+    opacity: 0;
+}
+.blog .item-card1 .para1 h4
+{
+    background-color: transparent;
+    font-size: 18px;
+    padding-left: 46px;
+    margin-bottom: 50px;
+}
+.blog .item-card1 .para1 p{
+    text-align: center;
+    width: 80%;
+    position: relative;
+    left: 150px;
+}
+.blog .item-card1:hover .para1{
+    top:0px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.blog .item-card1:hover .para1 h1
+{
+    padding-top: 100px;
+    color: gold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.blog .item-card1:hover .para1 h4{
+    text-decoration: underline;
+    text-decoration-thickness:3px;
+    text-decoration-color:goldenrod;
+}
+/* item card 3 design  */
+.blog .item-card2
+{
+    margin-top:40px;
+    width: 80%;
+    height: 450px;
+    border: 1px solid gold;
+    position: relative;
+    left: 120px;
+    top: 100px;
+    background-image: url("https://www.tastingtable.com/img/gallery/14-signs-youre-eating-at-a-quality-steakhouse/intro-1693247092.jpg") ;
+    background-position: center;
+    margin: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.blog .item-card2 .para2
+{
+    width:100%;height: 100%;
+    position: relative;
+    top:100px;
+    padding-top: 15px;
+    background-color: rgba(0,0,0,0.7);
+    transition: 1s;
+    overflow: hidden;
+    opacity: 0;
+}
+.blog .item-card2 .para2 h4
+{
+    background-color: transparent;
+    font-size: 18px;
+    padding-left: 40px;
+    margin-bottom: 50px;
+}
+.blog .item-card2 .para2 p{
+    text-align: center;
+    width: 80%;
+    position: relative;
+    left: 120px;
+}
+.blog .item-card2:hover .para2{
+    top:0px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.blog .item-card2:hover .para2 h1
+{
+    padding-top: 100px;
+    color: gold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.blog .item-card2:hover .para2 h4{
+    text-decoration: underline;
+    text-decoration-thickness:3px;
+    text-decoration-color:goldenrod;
+}
+/* end of blog and review section  */
+
+/* location styling is started from here  */
+.location .heading h1{
+    color:white;
+    margin-top: 120px;
+    font-size:42px;
+}
+.location h1 span{
+    color:gold;
+}
+iframe {
+
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    opacity: 0.6;
+}
+iframe:hover{
+    opacity: 1;
+}
+
+/* hr rule design  */
+hr{
+    height: 6px;
+    background-color: gold;
+}
+/* desgining of footer  */
+footer 
+{
+    width:100vw;
+    padding:30px 0 0 20px;
+}
+
+footer .footer_wrapper
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+footer .footer_wrapper .footer_dd{
+    margin-left: 48px;
+}
+
+footer .footer_wrapper .footer_dd h3{
+    color: gold;
+    margin-bottom:10px 45px;
+    font-size: 20px;
+}
+
+footer .footer_wrapper .footer_dd p{
+    margin :10px 24px;
+    font-size: 14px;
+}
+
+footer .footer_wrapper .footer_dd i{
+    cursor: pointer;
+    font-size: 26px;
+    margin: 42px 20px;
+}
+footer .footer_wrapper .footer_dd i:hover{
+    color: gold;
+}
