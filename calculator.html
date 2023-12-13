@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+   <link rel="styleSheet" href="/level-1task3/calculatorstylesheet.css">
+</head>
+<body>
+    <div class="wrapper">  
+        <input type="text" id="display" disabled placeholder="0" >
+        <h5>Hemanth's Calculator</h><br>
+            <!-- display value -->
+        <button id="c" onclick="c()">C</button>  <!--clear button-->
+        <button onclick="backspace()">⬅</button> <!--backspace button-->
+        <button onclick="symbol('+')">+</button>
+        <button onclick="symbol('%')">%</button><br>
+        <!-- extract row  -->
+        <button onclick="btn('7')">7</button>
+        <button onclick="btn('8')">8</button>
+        <button onclick="btn('9')">9</button>
+        <button onclick="symbol('/')">/</button><br>
+        <!-- 1st row completed -->
+        <button onclick="btn('4')">4</button>
+        <button onclick="btn('5')">5</button>
+        <button onclick="btn('6')">6</button>
+        <button onclick="symbol('*')">x</button><br>
+        <!-- 2nd row completed -->
+        <button onclick="btn('1')">1</button>
+        <button onclick="btn('2')">2</button>
+        <button onclick="btn('3')">3</button>
+        <button onclick="symbol('-')">-</button><br>
+        <!-- last row complted  -->
+        <button onclick="btn('0')">0</button>
+        <button onclick="symbol('.')">.</button>
+        <button onclick="btn('00')">00</button>
+        <button onclick="result()">=</button>
+    </div>
+</body>
+<Script src="calculator.js" type="text/javascript"></Script>
+</html>
